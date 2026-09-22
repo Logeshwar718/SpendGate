@@ -5,6 +5,10 @@ app_description = "spendgate"
 app_email = "logeshwarks2005@gmail.com"
 app_license = "mit"
 
+fixtures=[
+    "Department"
+]
+
 # Apps
 # ------------------
 
