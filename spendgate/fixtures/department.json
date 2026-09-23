@@ -19,20 +19,20 @@
  },
  {
   "department_head": null,
-  "department_name": "Equipment & Software",
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Department",
-  "modified": "2026-09-22 18:07:32.274788",
-  "name": "Equipment & Software"
- },
- {
-  "department_head": null,
   "department_name": "Training",
   "description": null,
   "docstatus": 0,
   "doctype": "Department",
   "modified": "2026-09-22 18:08:02.380253",
   "name": "Training"
+ },
+ {
+  "department_head": null,
+  "department_name": "Equipment & Software",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Department",
+  "modified": "2026-09-22 18:07:32.274788",
+  "name": "Equipment & Software"
  }
 ]
