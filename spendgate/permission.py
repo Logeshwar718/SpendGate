@@ -5,7 +5,7 @@ def share_expense_claim(claim_name,user_email):
     frappe.share.add(
         "Expense Claim",
         claim_name,
-        claim_email,
+        user_email,
         read=1
     )
 

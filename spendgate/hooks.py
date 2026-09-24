@@ -17,15 +17,17 @@ fixtures=[
     }
 ]
 
-after_install = "spendgate.install.after_install"
+after_install="spendgate.install.after_install"
 
-doc_events = {
+doc_events={
     "*": {
         "on_update": "spendgate.audit.log_change",
         "on_submit": "spendgate.audit.log_change",
         "on_cancel": "spendgate.audit.log_change",
     }
 }
+
+permission_query_conditions={"Expense Claim": "spendgate.permission.expense_claim_query"}
 
 # Apps
 # ------------------

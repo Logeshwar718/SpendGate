@@ -43,6 +43,7 @@ class ExpenseClaim(Document):
 
 		self.db_set("remaining_budget_at_submission",remaining)
 		self.db_set("approved_by",self.approved_by)
+		self.db_set("status","Pending Approval")
 
 	def on_cancel(self):
 		if self.status=="Reimbursed":
@@ -53,3 +54,6 @@ class ExpenseClaim(Document):
 	def on_trash(self):
 		if self.status not in ["Cancelled","Draft"]:
 			frappe.throw("Status with cancelled or draft only be deleted")
+
+	def before_print(self,print_settings=None):
+		self.print_summary=(f"{self.employee} - {self.department} - {self.expense_date}")
